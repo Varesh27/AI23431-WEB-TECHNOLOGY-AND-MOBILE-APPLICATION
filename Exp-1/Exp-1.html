@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tamil Nadu Map with Hotspots</title>
+
+<!-- Embedded CSS -->
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#f0f8ff;
+}
+
+h1{
+    color:#0b3d91;
+}
+
+.container{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.map-section{
+    width:50%;
+}
+
+.frame-section{
+    width:45%;
+}
+
+iframe{
+    border:2px solid #0b3d91;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="color:#0b3d91;">Tamil Nadu Map with Hotspots</h1>
+
+<p style="font-size:18px;">
+Click on a city hotspot to load information in the frame.
+</p>
+
+<div class="container">
+
+<!-- Map Section -->
+<div class="map-section">
+
+<img src="Tamil_Nadu_districts_map.svg.png"
+usemap="#tnmap" width="500" alt="Tamil Nadu Map">
+
+<map name="tnmap">
+
+<!-- Chennai -->
+<area shape="circle" coords="430,120,25"
+href="https://en.wikipedia.org/wiki/Chennai"
+target="info">
+
+<!-- Coimbatore -->
+<area shape="circle" coords="140,300,25"
+href="https://en.wikipedia.org/wiki/Coimbatore"
+target="info">
+
+<!-- Madurai -->
+<area shape="circle" coords="280,380,25"
+href="https://en.wikipedia.org/wiki/Madurai"
+target="info">
+
+<!-- Trichy -->
+<area shape="circle" coords="300,300,25"
+href="https://en.wikipedia.org/wiki/Tiruchirappalli"
+target="info">
+
+</map>
+
+</div>
+
+<!-- Frame Section -->
+<div class="frame-section">
+
+<iframe name="info"
+width="100%"
+height="500"
+src="https://en.wikipedia.org/wiki/Tamil_Nadu">
+</iframe>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- Links -->
+<p>
+<a href="https://en.wikipedia.org/wiki/Tamil_Nadu" target="_blank">
+About Tamil Nadu
+</a> |
+<a href="https://www.tamilnadutourism.tn.gov.in/" target="_blank">
+Tamil Nadu Tourism
+</a>
+</p>
+
+</body>
+</html>
